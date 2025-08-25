@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - NexGen Digital Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-rocket"></i>
+        <span>NexGen</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pdfs.html" class="nav-link">Resources</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-comments"></i>
+          <span>Let's Connect</span>
+        </div>
+        <h1 class="hero-title">
+          Get in <span class="gradient-text">Touch</span> With Us
+        </h1>
+        <p class="hero-description">
+          Have questions about our courses or need guidance? We're here to help you start your learning journey.
+        </p>
+        <div class="contact-stats">
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support Available</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Happy Students</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Main Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2>Send us a Message</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">
+                  <i class="fas fa-user"></i>
+                  First Name
+                </label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">
+                  <i class="fas fa-user"></i>
+                  Last Name
+                </label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">
+                  <i class="fas fa-envelope"></i>
+                  Email Address
+                </label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">
+                  <i class="fas fa-phone"></i>
+                  Phone Number
+                </label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i>
+                Subject
+              </label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="course-inquiry">Course Inquiry</option>
+                <option value="enrollment">Enrollment Process</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="payment">Payment & Pricing</option>
+                <option value="general">General Question</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment-alt"></i>
+                Your Message
+              </label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span class="checkmark"></span>
+                I'd like to receive updates about new courses and resources
+              </label>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+              <span class="btn-effect"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="info-header">
+            <h3>Contact Information</h3>
+            <p>Reach out to us through any of these channels</p>
+          </div>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-details">
+                <h4>Visit Our Office</h4>
+                <p>Rampur <br>Near Arunoday School , 782435 <br>Hojai, Assam</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="method-details">
+                <h4>Call Us</h4>
+                <p>+91 7002466195<br>+91 7002569516<br>Mon-Sat 9AM-6PM</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-details">
+                <h4>Email Us</h4>
+                <p>nexgendigitalhub7@gmail.com<br>support@nexgendigitalhub7.com<br>We reply within 24 hours</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="method-details">
+                <h4>WhatsApp</h4>
+                <p>+91 7002466195 <br>Quick support & queries<br>Available 24/7</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Cards -->
+  <section class="quick-contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Need Immediate Help?</h2>
+        <p>Choose the fastest way to get in touch with our team</p>
+      </div>
+      
+      <div class="quick-contact-grid">
+        <div class="quick-card">
+          <div class="quick-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>WhatsApp Chat</h3>
+          <p>Get instant responses to your queries</p>
+          <a href="https://wa.me/7002466195" class="quick-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Chat Now
+          </a>
+        </div>
+        
+        <div class="quick-card">
+          <div class="quick-icon phone">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Call Directly</h3>
+          <p>Speak with our education consultants</p>
+          <a href="tel:+917002569516" class="quick-btn">
+            <i class="fas fa-phone"></i>
+            Call Now
+          </a>
+        </div>
+        
+        <div class="quick-card">
+          <div class="quick-icon email">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Support</h3>
+          <p>Send detailed queries and get comprehensive answers</p> 
+          <a href="nexgendigitalhub7@gmail.com" class="quick-btn">
+            <i class="fas fa-envelope"></i>
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common questions</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How do I enroll in a course?</h4>
+            <button class="faq-toggle">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq-answer">
+            <p>You can enroll by contacting us through any of the methods above. Our team will guide you through the enrollment process, course details, and payment options.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>What are the payment options available?</h4>
+            <button class="faq-toggle">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq-answer">
+            <p>We accept various payment methods including UPI, bank transfer, credit/debit cards, and installment plans for longer courses.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Do you provide certificates after course completion?</h4>
+            <button class="faq-toggle">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we provide industry-recognized certificates upon successful completion of all courses. These certificates can boost your career prospects.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can I access study materials offline?</h4>
+            <button class="faq-toggle">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all PDFs and study materials can be downloaded for offline access. Some video content may require an internet connection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-rocket"></i>
+            <span>NexGen Digital Hub</span>
+          </div>
+          <p>Empowering learners with quality education and resources for a brighter future.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pdfs.html">Resources</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="pdfs.html">Class XI</a></li>
+              <li><a href="pdfs.html">Class XII</a></li>
+              <li><a href="pdfs.html">SSC GD</a></li>
+              <li><a href="pdfs.html">Computer Courses</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexGen Digital Hub. Made with <i class="fas fa-heart"></i> for learners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show success message
+      const submitBtn = document.querySelector('.submit-btn');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      submitBtn.style.background = '#10b981';
+      
+      setTimeout(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', function() {
+        const faqItem = this.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = this.querySelector('i');
+        
+        faqItem.classList.toggle('active');
+        
+        if (faqItem.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.style.transform = 'rotate(45deg)';
+        } else {
+          answer.style.maxHeight = '0';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+
+    // Form input animations
+    document.querySelectorAll('.contact-form input, .contact-form select, .contact-form textarea').forEach(input => {
+      input.addEventListener('focus', function() {
+        this.parentElement.classList.add('focused');
+      });
+      
+      input.addEventListener('blur', function() {
+        if (!this.value) {
+          this.parentElement.classList.remove('focused');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
