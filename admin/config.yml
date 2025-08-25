@@ -3,7 +3,7 @@ backend:
   repo: vidyutsaikia/NexgendigitalHub
   branch: main
   auth_endpoint: https://dev-i4h2n4mlis6yhmkx.us.auth0.com/authorize
-  app_id: hPtiQ6GUOKF81e0zn5MzTSp9fIgy1Rg7
+  app_id: qd3mjF8fvGdgxMxGxv9BF2iJz2q904L1
 
 media_folder: "static/img"
 public_folder: "/img"
