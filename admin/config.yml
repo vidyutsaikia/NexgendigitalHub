@@ -2,19 +2,16 @@ backend:
   name: github
   repo: vidyutsaikia/NexgendigitalHub
   branch: main
-  auth_endpoint: https://dev-i4h2n4mlis6yhmkx.us.auth0.com/authorize
-  app_id: qd3mjF8fvGdgxMxGxv9BF2iJz2q904L1
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: "static/uploads" # Where files get stored in repo
+public_folder: "/uploads"      # Public URL for those files
 
 collections:
-  - name: pages
-    label: Pages
-    files:
-      - file: "src/pages/about.md"
-        label: "About Page"
-        name: about
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pdfs"
+    label: "PDFs"
+    folder: "static/uploads/pdfs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "File", name: "file", widget: "file", media_library: true }
