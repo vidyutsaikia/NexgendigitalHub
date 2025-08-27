@@ -14,8 +14,8 @@
             repo: 'vidyutsaikia/NexgendigitalHub',
             branch: 'main',
             auth_type: 'implicit',
-            app_id: 'qd3mjF8fvGdgxMxGxv9BF2iJz2q904L1',
-            auth_endpoint: 'https://dev-i4h2n4mlis6yhmkx.us.auth0.com/authorize'
+            app_id: '${AUTH0_CLIENT_ID}', // ✅ Using env variable
+            auth_endpoint: '${AUTH0_ISSUER_BASE_URL}/authorize' // ✅ Using env variable
           },
           media_folder: "static/uploads",
           public_folder: "/uploads",
