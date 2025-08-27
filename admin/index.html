@@ -1,11 +1,41 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Content Manager</title>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  </head>
-  <body>
-    <!-- Netlify CMS will mount here -->
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Content Manager</title>
+  <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    window.CMS_MANUAL_INIT = true;
+    window.addEventListener('load', function() {
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'vidyutsaikia/NexgendigitalHub',
+            branch: 'main',
+            auth_type: 'implicit',
+            app_id: 'qd3mjF8fvGdgxMxGxv9BF2iJz2q904L1',
+            auth_endpoint: 'https://dev-i4h2n4mlis6yhmkx.us.auth0.com/authorize'
+          },
+          media_folder: "static/uploads",
+          public_folder: "/uploads",
+          collections: [
+            {
+              name: "pdfs",
+              label: "PDFs",
+              folder: "static/uploads/pdfs",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "File", name: "file", widget: "file", media_library: true }
+              ]
+            }
+          ]
+        }
+      });
+    });
+  </script>
+</head>
+<body></body>
 </html>
