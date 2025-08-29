@@ -1,4 +1,4 @@
-<!doctype html>
+<!<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -14,8 +14,8 @@
             repo: 'vidyutsaikia/NexgendigitalHub',
             branch: 'main',
             auth_type: 'implicit',
-            app_id: '${AUTH0_CLIENT_ID}', // ✅ Using env variable
-            auth_endpoint: '${AUTH0_ISSUER_BASE_URL}/authorize' // ✅ Using env variable
+            app_id: '${AUTH0_CLIENT_ID}',
+            base_url: 'https://${AUTH0_DOMAIN}'
           },
           media_folder: "static/uploads",
           public_folder: "/uploads",
@@ -28,7 +28,7 @@
               slug: "{{slug}}",
               fields: [
                 { label: "Title", name: "title", widget: "string" },
-                { label: "File", name: "file", widget: "file", media_library: true }
+                { label: "File", name: "file", widget: "file" }
               ]
             }
           ]
