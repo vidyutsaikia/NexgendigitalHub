@@ -4,7 +4,7 @@ backend:
   branch: main
   auth_type: implicit
   app_id: ${AUTH0_CLIENT_ID}
-  auth_endpoint: ${AUTH0_DOMAIN}
+  auth_endpoint: ${AUTH0_ISSUER_BASE_URL}
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -17,4 +17,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "File", name: "file", widget: "file", media_library: true }
+      - { label: "File", name: "file", widget: "file" }
