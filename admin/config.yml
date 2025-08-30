@@ -4,7 +4,7 @@ backend:
   branch: main
   auth_type: implicit
   app_id: ${AUTH0_CLIENT_ID}
-  auth_endpoint: ${AUTH0_ISSUER_BASE_URL}
+  auth_endpoint: ${AUTH0_ISSUER_BASE_URL}/authorize
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
