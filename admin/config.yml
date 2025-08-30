@@ -3,8 +3,8 @@ backend:
   repo: vidyutsaikia/NexgendigitalHub
   branch: main
   auth_type: implicit
-  app_id: ${AUTH0_CLIENT_ID}
-  auth_endpoint: https://${AUTH0_DOMAIN}
+  app_id: y4TkKo0hoPDr6gcbS8YdWRYady95HjmW
+  auth_endpoint: https://dev-i4h2n4mlis6yhmkx.us.auth0.com
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
